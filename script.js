@@ -1,13 +1,15 @@
-const videoSources = ["videos\background.mp4", "videos\download.mp4"];
-let currentIndex = 0;
 
-const video = document.getElementById("bg-video");
+const text = "EDITWITSS";
+const typeTextElement = document.getElementById("type-text");
 
-function switchVideo() {
-  currentIndex = (currentIndex + 1) % videoSources.length;
-  video.src = videoSources[currentIndex];
-  video.load();
-  video.play();
+let i = 0;
+
+function type() {
+  if (i < text.length) {
+    typeTextElement.innerHTML += text.charAt(i);
+    i++;
+    setTimeout(type, 100); // speed of typing
+  }
 }
 
-setInterval(switchVideo, 15000); // every 15 seconds
+window.onload = type;

@@ -2,27 +2,118 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Aaradhya | Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Video Background</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
   <section class="hero-section">
-    
-    <video id="bg-video" autoplay muted loop playsinline>
-  <source src="videos\background.mp4," type="">
-</video>
+    <div class="video-container">
+      <video id="bg-video" autoplay muted loop playsinline>
+        <source src="download.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+    </div>
 
-    <div class="hero-content">
-      <h1>Hi, I'm Aaradhya</h1>
-      <p>Cybersecurity enthusiast & aspiring web developer</p>
-      <a href="#projects" class="btn">View My Work</a>
+    <div class="overlay"></div>
+
+    <div class="content">
+      <h1 id="type-text"></h1>
+      <p class="fade-in">Welcome to the video editing world</p>
+      <a href="#about" class="btn fade-in">Explore more</a>
     </div>
   </section>
+<section class="about-section" id="about">
+  <div class="about-container">
+    <div class="about-text">
+      <h2>About Me</h2>
+      <p>
+        I'm Shourya Saxena, a passionate video editor with an eye for detail and storytelling.
+        I specialize in crafting engaging content — from dynamic reels to cinematic YouTube edits.
+      </p>
+      <p>
+        With tools like Adobe Premiere Pro, After Effects, and DaVinci Resolve, 
+        I turn raw footage into impactful stories that connect. Let’s bring your vision to life!
+      </p>
+    </div>
+    <div class="about-image">
+      <img src="images\background.jpg" alt="Shourya Saxena">
+    </div>
+  </div>
 
- <script src="script.js"></script>
+<section class="services-section" id="services">
+  <h2>Services</h2>
+  <div class="services-grid">
+    
+    <div class="service-card">
+      <h3>🎬 Reels Editing</h3>
+      <p>Engaging, fast-paced short videos tailored for Instagram and YouTube Shorts.</p>
+    </div>
 
+    <div class="service-card">
+      <h3>📹 YouTube Videos</h3>
+      <p>From vlogs to tutorials, I craft full-length edits with smooth transitions and sound sync.</p>
+    </div>
+
+    <div class="service-card">
+      <h3>💍 Wedding Videos</h3>
+      <p>Cinematic wedding highlights that preserve your special moments beautifully.</p>
+    </div>
+
+  </div>
+</section>
+
+
+<section class="video-portfolio" id="portfolio">
+  <h2>My Work</h2>
+  <div class="video-grid">
+    
+    <div class="video-card">
+      <video autoplay muted loop playsinline>
+        <source src="videos\Video-5.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      <h3>BASIC</h3>
+    </div>
+
+    <div class="video-card">
+      <video autoplay muted loop playsinline>
+        <source src="videos\Video-834.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      <h3>STANDARD</h3>
+    </div>
+
+    <div class="video-card">
+      <video autoplay muted loop playsinline>
+        <source src="videos\Video-266.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      <h3>PREMIUM</h3>
+    </div>
+
+  </div>
+</section>
+<section class="contact-section" id="contact">
+  <h2>Contact Me</h2>
+
+  <form class="contact-form" action="https://formspree.io/f/myzpkwbo" method="post">
+    <input type="text" name="name" placeholder="Your Name" required />
+    <input type="email" name="email" placeholder="Your Email" required />
+    <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+    <button type="submit">Send Message</button>
+  </form>
+
+  <div class="contact-info">
+    <p>📧 Email: <a href="mailto:editwithss@gmail.com">editwithss@gmail.com</a></p>
+    <p>🔗 LinkedIn: <a href="https://www.linkedin.com/in/shouryasaxena-editwithss/target="_blank>linkedin.com/in/shourya</a></p>
+</section>
+
+
+
+  <script src="script.js"></script>
 </body>
 </html>
+
 
